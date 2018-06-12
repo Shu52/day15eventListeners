@@ -48,6 +48,7 @@ function toggleClass (newClass) {
 /* <button id="activate-all">Active All Powers</button> */
 document.querySelector("#activate-all").addEventListener("click",
 function activate (){
-var element = document.querySelectorAll(".power")
+var element = document.querySelectorAll(".power");
+
 
 })
