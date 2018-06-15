@@ -48,7 +48,20 @@ function toggleClass (newClass) {
 /* <button id="activate-all">Active All Powers</button> */
 document.querySelector("#activate-all").addEventListener("click",
 function activate (){
-var element = document.querySelectorAll(".power");
+    var element = document.querySelectorAll(".power");
+    for(let i=0; i < element.length; i++){
+        element[i].classList.remove("disabled");
+        element[i].classList.add("enabled");
+    }
 
+})
+//remove
+document.querySelector("#deactivate-all").addEventListener("click",
+function activate (){
+    var element = document.querySelectorAll(".power");
+    for(let i=0; i < element.length; i++){
+        element[i].classList.remove("enabled");
+        element[i].classList.add("disabled");
+    }
 
 })
